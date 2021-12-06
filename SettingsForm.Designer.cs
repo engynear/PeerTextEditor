@@ -39,6 +39,11 @@
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.label_PickCompilerFile = new System.Windows.Forms.Label();
             this.btn_PickCompilerFile = new System.Windows.Forms.Button();
+            this.label_ColorSheme = new System.Windows.Forms.Label();
+            this.btn_PickBackColor = new System.Windows.Forms.Button();
+            this.btn_ForeColor = new System.Windows.Forms.Button();
+            this.label_BackColor = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_AutoSaveHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_AutoSaveMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_AutoSaveSeconds)).BeginInit();
@@ -168,11 +173,62 @@
             this.btn_PickCompilerFile.UseVisualStyleBackColor = true;
             this.btn_PickCompilerFile.Click += new System.EventHandler(this.btn_PickCompilerFile_Click);
             // 
+            // label_ColorSheme
+            // 
+            this.label_ColorSheme.AutoSize = true;
+            this.label_ColorSheme.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_ColorSheme.Location = new System.Drawing.Point(51, 167);
+            this.label_ColorSheme.Name = "label_ColorSheme";
+            this.label_ColorSheme.Size = new System.Drawing.Size(115, 21);
+            this.label_ColorSheme.TabIndex = 12;
+            this.label_ColorSheme.Text = "Color Scheme";
+            // 
+            // btn_PickBackColor
+            // 
+            this.btn_PickBackColor.Location = new System.Drawing.Point(39, 213);
+            this.btn_PickBackColor.Name = "btn_PickBackColor";
+            this.btn_PickBackColor.Size = new System.Drawing.Size(148, 34);
+            this.btn_PickBackColor.TabIndex = 13;
+            this.btn_PickBackColor.UseVisualStyleBackColor = true;
+            this.btn_PickBackColor.Click += new System.EventHandler(this.btn_PickBackColor_Click);
+            // 
+            // btn_ForeColor
+            // 
+            this.btn_ForeColor.Location = new System.Drawing.Point(39, 265);
+            this.btn_ForeColor.Name = "btn_ForeColor";
+            this.btn_ForeColor.Size = new System.Drawing.Size(148, 34);
+            this.btn_ForeColor.TabIndex = 14;
+            this.btn_ForeColor.UseVisualStyleBackColor = true;
+            this.btn_ForeColor.Click += new System.EventHandler(this.btn_ForeColor_Click);
+            // 
+            // label_BackColor
+            // 
+            this.label_BackColor.AutoSize = true;
+            this.label_BackColor.Location = new System.Drawing.Point(59, 196);
+            this.label_BackColor.Name = "label_BackColor";
+            this.label_BackColor.Size = new System.Drawing.Size(103, 15);
+            this.label_BackColor.TabIndex = 15;
+            this.label_BackColor.Text = "Background Color";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 15);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Foreground color (Font)";
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(233, 416);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label_BackColor);
+            this.Controls.Add(this.btn_ForeColor);
+            this.Controls.Add(this.btn_PickBackColor);
+            this.Controls.Add(this.label_ColorSheme);
             this.Controls.Add(this.btn_PickCompilerFile);
             this.Controls.Add(this.label_PickCompilerFile);
             this.Controls.Add(this.btn_Cancel);
@@ -206,5 +262,10 @@
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Label label_PickCompilerFile;
         private System.Windows.Forms.Button btn_PickCompilerFile;
+        private System.Windows.Forms.Label label_ColorSheme;
+        private System.Windows.Forms.Button btn_PickBackColor;
+        private System.Windows.Forms.Button btn_ForeColor;
+        private System.Windows.Forms.Label label_BackColor;
+        private System.Windows.Forms.Label label2;
     }
 }

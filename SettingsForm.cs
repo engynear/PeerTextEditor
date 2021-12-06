@@ -18,14 +18,29 @@ namespace PeerTextEditor
             get; private set;
         }
         public int seconds {
-            get; private set; 
+            get; private set;
         }
-        public SettingsForm(int secs)
+
+        public Color color
+        {
+            get; private set;
+        }
+
+        public Color foreColor
+        {
+            get; private set;
+        }
+        public SettingsForm(Form owner)
         {
             InitializeComponent();
-            numeric_AutoSaveHours.Value = secs / 360;
-            numeric_AutoSaveMinutes.Value = (secs / 60) % 60;
-            numeric_AutoSaveSeconds.Value = secs % 60 % 60 + 1;
+            numeric_AutoSaveSeconds.Value = 10;
+            Owner = owner;
+            seconds = 10;
+            fileInfo = new("C:/");
+            color = Owner.BackColor;
+            foreColor = Owner.ForeColor;
+            btn_PickBackColor.BackColor = color;
+            btn_ForeColor.BackColor = foreColor;
         }
 
         private void label_AutoSaveInterval_Click(object sender, EventArgs e)
@@ -79,6 +94,34 @@ namespace PeerTextEditor
                     case DialogResult.OK:
                         fileInfo = new FileInfo(openFileDialog.FileName);
                         btn_PickCompilerFile.Text = fileInfo.Name;
+                        break;
+                }
+            }
+        }
+
+        private void btn_PickBackColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new())
+            {
+                switch (colorDialog.ShowDialog())
+                {
+                    case DialogResult.OK:
+                        color = colorDialog.Color;
+                        btn_PickBackColor.BackColor = color;
+                        break;
+                }
+            }
+        }
+
+        private void btn_ForeColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new())
+            {
+                switch (colorDialog.ShowDialog())
+                {
+                    case DialogResult.OK:
+                        foreColor = colorDialog.Color;
+                        btn_ForeColor.BackColor = foreColor;
                         break;
                 }
             }

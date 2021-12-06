@@ -14,11 +14,10 @@ C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\PeerTextEdit
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\ref\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\PeerTextEditor.pdb
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\en\PeerTextEditor.resources.dll
-C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\FastColoredTextBox.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\en\PeerTextEditor.resources.dll
-C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.csproj.CopyComplete
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\ref\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.pdb
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.genruntimeconfig.cache
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.SettingsForm.resources
+C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.Properties.Resources.resources

@@ -107,6 +107,15 @@
   <data name="menu_File_SaveAs.Text" xml:space="preserve">
     <value>Save as...</value>
   </data>
+  <data name="menu_File_SaveAll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Alt+S</value>
+  </data>
+  <data name="menu_File_SaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="menu_File_SaveAll.Text" xml:space="preserve">
+    <value>Save All</value>
+  </data>
   <data name="menu_File_Separator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 6</value>
   </data>
@@ -239,13 +248,13 @@
   <data name="menu_Format.Text" xml:space="preserve">
     <value>Format</value>
   </data>
-  <data name="runToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+  <data name="menu_Compile_Run.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F5</value>
   </data>
-  <data name="runToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="menu_Compile_Run.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
-  <data name="runToolStripMenuItem.Text" xml:space="preserve">
+  <data name="menu_Compile_Run.Text" xml:space="preserve">
     <value>Run</value>
   </data>
   <data name="menu_Compile.Size" type="System.Drawing.Size, System.Drawing">
@@ -304,7 +313,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -328,11 +337,113 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="timerAutoSave.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>133, 19</value>
   </metadata>
+  <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>265, 19</value>
+  </metadata>
+  <data name="contextMenu_Copy.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="contextMenu_Copy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Copy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="contextMenu_Paste.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+V</value>
+  </data>
+  <data name="contextMenu_Paste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Paste.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="contextMenu_Cut.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+X</value>
+  </data>
+  <data name="contextMenu_Cut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Cut.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="contextMenu_Delete.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Del</value>
+  </data>
+  <data name="contextMenu_Delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 6</value>
+  </data>
+  <data name="contextMenu_SelectionFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_SelectionFont.Text" xml:space="preserve">
+    <value>Selection Font...</value>
+  </data>
+  <data name="contextMenu_SelectAll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+A</value>
+  </data>
+  <data name="contextMenu_SelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_SelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 6</value>
+  </data>
+  <data name="contextMenu_Bold.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+B</value>
+  </data>
+  <data name="contextMenu_Bold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Bold.Text" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="contextMenu_Italic.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+I</value>
+  </data>
+  <data name="contextMenu_Italic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Italic.Text" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="contextMenu_Underlined.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+U</value>
+  </data>
+  <data name="contextMenu_Underlined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Underlined.Text" xml:space="preserve">
+    <value>Underlined</value>
+  </data>
+  <data name="contextMenu_Strikeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="contextMenu_Strikeout.Text" xml:space="preserve">
+    <value>Strikeout</value>
+  </data>
+  <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 236</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
+    <value>contextMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -379,6 +490,12 @@
     <value>menu_File_SaveAs</value>
   </data>
   <data name="&gt;&gt;menu_File_SaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu_File_SaveAll.Name" xml:space="preserve">
+    <value>menu_File_SaveAll</value>
+  </data>
+  <data name="&gt;&gt;menu_File_SaveAll.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;menu_File_Separator1.Name" xml:space="preserve">
@@ -495,10 +612,10 @@
   <data name="&gt;&gt;menu_Compile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;runToolStripMenuItem.Name" xml:space="preserve">
-    <value>runToolStripMenuItem</value>
+  <data name="&gt;&gt;menu_Compile_Run.Name" xml:space="preserve">
+    <value>menu_Compile_Run</value>
   </data>
-  <data name="&gt;&gt;runToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;menu_Compile_Run.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;menu_Settings.Name" xml:space="preserve">
@@ -536,6 +653,78 @@
   </data>
   <data name="&gt;&gt;timerAutoSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Copy.Name" xml:space="preserve">
+    <value>contextMenu_Copy</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Copy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Paste.Name" xml:space="preserve">
+    <value>contextMenu_Paste</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Paste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Cut.Name" xml:space="preserve">
+    <value>contextMenu_Cut</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Cut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Delete.Name" xml:space="preserve">
+    <value>contextMenu_Delete</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_SelectionFont.Name" xml:space="preserve">
+    <value>contextMenu_SelectionFont</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_SelectionFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_SelectAll.Name" xml:space="preserve">
+    <value>contextMenu_SelectAll</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_SelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Bold.Name" xml:space="preserve">
+    <value>contextMenu_Bold</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Bold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Italic.Name" xml:space="preserve">
+    <value>contextMenu_Italic</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Italic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Underlined.Name" xml:space="preserve">
+    <value>contextMenu_Underlined</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Underlined.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Strikeout.Name" xml:space="preserve">
+    <value>contextMenu_Strikeout</value>
+  </data>
+  <data name="&gt;&gt;contextMenu_Strikeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

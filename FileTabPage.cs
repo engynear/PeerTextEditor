@@ -24,6 +24,7 @@ namespace PeerTextEditor
             Rtb.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
             Rtb.TextChanged += new System.EventHandler(rtb_TextChanged);
             Rtb.Font = DefaultFont;
+            Rtb.BackColor = this.BackColor;
 
             try
             {

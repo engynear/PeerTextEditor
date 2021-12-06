@@ -43,12 +43,6 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "dependencies": {
-            "FCTB": {
-              "target": "Package",
-              "version": "[2.16.24, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
