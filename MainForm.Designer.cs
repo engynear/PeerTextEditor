@@ -77,6 +77,9 @@
             this.contextMenu_Italic = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu_Underlined = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu_Strikeout = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -209,7 +212,7 @@
             // 
             this.menu_Edit_Copy.Name = "menu_Edit_Copy";
             this.menu_Edit_Copy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.menu_Edit_Copy.Size = new System.Drawing.Size(164, 22);
+            this.menu_Edit_Copy.Size = new System.Drawing.Size(180, 22);
             this.menu_Edit_Copy.Text = "Copy";
             this.menu_Edit_Copy.Click += new System.EventHandler(this.menu_Edit_Copy_Click);
             // 
@@ -217,7 +220,7 @@
             // 
             this.menu_Edit_Paste.Name = "menu_Edit_Paste";
             this.menu_Edit_Paste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.menu_Edit_Paste.Size = new System.Drawing.Size(164, 22);
+            this.menu_Edit_Paste.Size = new System.Drawing.Size(180, 22);
             this.menu_Edit_Paste.Text = "Paste";
             this.menu_Edit_Paste.Click += new System.EventHandler(this.menu_Edit_Paste_Click);
             // 
@@ -225,7 +228,7 @@
             // 
             this.menu_Edit_Cut.Name = "menu_Edit_Cut";
             this.menu_Edit_Cut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.menu_Edit_Cut.Size = new System.Drawing.Size(164, 22);
+            this.menu_Edit_Cut.Size = new System.Drawing.Size(180, 22);
             this.menu_Edit_Cut.Text = "Cut";
             this.menu_Edit_Cut.Click += new System.EventHandler(this.menu_Edit_Cut_Click);
             // 
@@ -233,20 +236,20 @@
             // 
             this.menu_Edit_Delete.Name = "menu_Edit_Delete";
             this.menu_Edit_Delete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.menu_Edit_Delete.Size = new System.Drawing.Size(164, 22);
+            this.menu_Edit_Delete.Size = new System.Drawing.Size(180, 22);
             this.menu_Edit_Delete.Text = "Delete";
             this.menu_Edit_Delete.Click += new System.EventHandler(this.menu_Edit_Delete_Click);
             // 
             // menu_Edit_Separator1
             // 
             this.menu_Edit_Separator1.Name = "menu_Edit_Separator1";
-            this.menu_Edit_Separator1.Size = new System.Drawing.Size(161, 6);
+            this.menu_Edit_Separator1.Size = new System.Drawing.Size(177, 6);
             // 
             // menu_Edit_SelectAll
             // 
             this.menu_Edit_SelectAll.Name = "menu_Edit_SelectAll";
             this.menu_Edit_SelectAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.menu_Edit_SelectAll.Size = new System.Drawing.Size(164, 22);
+            this.menu_Edit_SelectAll.Size = new System.Drawing.Size(180, 22);
             this.menu_Edit_SelectAll.Text = "Select All";
             this.menu_Edit_SelectAll.Click += new System.EventHandler(this.menu_Edit_SelectAll_Click);
             // 
@@ -267,7 +270,7 @@
             // 
             this.menu_Format_Bold.Name = "menu_Format_Bold";
             this.menu_Format_Bold.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.menu_Format_Bold.Size = new System.Drawing.Size(174, 22);
+            this.menu_Format_Bold.Size = new System.Drawing.Size(180, 22);
             this.menu_Format_Bold.Text = "Bold";
             this.menu_Format_Bold.Click += new System.EventHandler(this.menu_Format_Bold_Click);
             // 
@@ -275,7 +278,7 @@
             // 
             this.menu_Format_Italic.Name = "menu_Format_Italic";
             this.menu_Format_Italic.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.menu_Format_Italic.Size = new System.Drawing.Size(174, 22);
+            this.menu_Format_Italic.Size = new System.Drawing.Size(180, 22);
             this.menu_Format_Italic.Text = "Italic";
             this.menu_Format_Italic.Click += new System.EventHandler(this.menu_Format_Italic_Click);
             // 
@@ -283,26 +286,26 @@
             // 
             this.menu_Format_Underlined.Name = "menu_Format_Underlined";
             this.menu_Format_Underlined.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.menu_Format_Underlined.Size = new System.Drawing.Size(174, 22);
+            this.menu_Format_Underlined.Size = new System.Drawing.Size(180, 22);
             this.menu_Format_Underlined.Text = "Underlined";
             this.menu_Format_Underlined.Click += new System.EventHandler(this.menu_Format_Underlined_Click);
             // 
             // menu_Format_Strikeout
             // 
             this.menu_Format_Strikeout.Name = "menu_Format_Strikeout";
-            this.menu_Format_Strikeout.Size = new System.Drawing.Size(174, 22);
+            this.menu_Format_Strikeout.Size = new System.Drawing.Size(180, 22);
             this.menu_Format_Strikeout.Text = "Strikeout";
             this.menu_Format_Strikeout.Click += new System.EventHandler(this.menu_Format_Strikeout_Click);
             // 
             // menu_Format_Separator1
             // 
             this.menu_Format_Separator1.Name = "menu_Format_Separator1";
-            this.menu_Format_Separator1.Size = new System.Drawing.Size(171, 6);
+            this.menu_Format_Separator1.Size = new System.Drawing.Size(177, 6);
             // 
             // menu_Format_Font
             // 
             this.menu_Format_Font.Name = "menu_Format_Font";
-            this.menu_Format_Font.Size = new System.Drawing.Size(174, 22);
+            this.menu_Format_Font.Size = new System.Drawing.Size(180, 22);
             this.menu_Format_Font.Text = "Font...";
             this.menu_Format_Font.Click += new System.EventHandler(this.menu_Format_Font_Click);
             // 
@@ -318,7 +321,7 @@
             // 
             this.menu_Compile_Run.Name = "menu_Compile_Run";
             this.menu_Compile_Run.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.menu_Compile_Run.Size = new System.Drawing.Size(114, 22);
+            this.menu_Compile_Run.Size = new System.Drawing.Size(180, 22);
             this.menu_Compile_Run.Text = "Run";
             this.menu_Compile_Run.Click += new System.EventHandler(this.runToolStripMenuItem_Click);
             // 
@@ -376,6 +379,9 @@
             // contextMenuStrip
             // 
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripMenuItem3,
             this.contextMenu_Copy,
             this.contextMenu_Paste,
             this.contextMenu_Cut,
@@ -389,13 +395,13 @@
             this.contextMenu_Underlined,
             this.contextMenu_Strikeout});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(175, 236);
+            this.contextMenuStrip.Size = new System.Drawing.Size(181, 308);
             // 
             // contextMenu_Copy
             // 
             this.contextMenu_Copy.Name = "contextMenu_Copy";
             this.contextMenu_Copy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.contextMenu_Copy.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Copy.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Copy.Text = "Copy";
             this.contextMenu_Copy.Click += new System.EventHandler(this.menu_Edit_Copy_Click);
             // 
@@ -403,7 +409,7 @@
             // 
             this.contextMenu_Paste.Name = "contextMenu_Paste";
             this.contextMenu_Paste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.contextMenu_Paste.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Paste.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Paste.Text = "Paste";
             this.contextMenu_Paste.Click += new System.EventHandler(this.menu_Edit_Paste_Click);
             // 
@@ -411,7 +417,7 @@
             // 
             this.contextMenu_Cut.Name = "contextMenu_Cut";
             this.contextMenu_Cut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.contextMenu_Cut.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Cut.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Cut.Text = "Cut";
             this.contextMenu_Cut.Click += new System.EventHandler(this.menu_Edit_Cut_Click);
             // 
@@ -419,19 +425,19 @@
             // 
             this.contextMenu_Delete.Name = "contextMenu_Delete";
             this.contextMenu_Delete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.contextMenu_Delete.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Delete.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Delete.Text = "Delete";
             this.contextMenu_Delete.Click += new System.EventHandler(this.menu_Edit_Delete_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(171, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // contextMenu_SelectionFont
             // 
             this.contextMenu_SelectionFont.Name = "contextMenu_SelectionFont";
-            this.contextMenu_SelectionFont.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_SelectionFont.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_SelectionFont.Text = "Selection Font...";
             this.contextMenu_SelectionFont.Click += new System.EventHandler(this.contextMenu_SelectionFont_Click);
             // 
@@ -439,20 +445,20 @@
             // 
             this.contextMenu_SelectAll.Name = "contextMenu_SelectAll";
             this.contextMenu_SelectAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.contextMenu_SelectAll.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_SelectAll.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_SelectAll.Text = "Select All";
             this.contextMenu_SelectAll.Click += new System.EventHandler(this.menu_Edit_SelectAll_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(171, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // contextMenu_Bold
             // 
             this.contextMenu_Bold.Name = "contextMenu_Bold";
             this.contextMenu_Bold.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.contextMenu_Bold.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Bold.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Bold.Text = "Bold";
             this.contextMenu_Bold.Click += new System.EventHandler(this.menu_Format_Bold_Click);
             // 
@@ -460,7 +466,7 @@
             // 
             this.contextMenu_Italic.Name = "contextMenu_Italic";
             this.contextMenu_Italic.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.contextMenu_Italic.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Italic.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Italic.Text = "Italic";
             this.contextMenu_Italic.Click += new System.EventHandler(this.menu_Format_Italic_Click);
             // 
@@ -468,16 +474,36 @@
             // 
             this.contextMenu_Underlined.Name = "contextMenu_Underlined";
             this.contextMenu_Underlined.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.contextMenu_Underlined.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Underlined.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Underlined.Text = "Underlined";
             this.contextMenu_Underlined.Click += new System.EventHandler(this.menu_Format_Underlined_Click);
             // 
             // contextMenu_Strikeout
             // 
             this.contextMenu_Strikeout.Name = "contextMenu_Strikeout";
-            this.contextMenu_Strikeout.Size = new System.Drawing.Size(174, 22);
+            this.contextMenu_Strikeout.Size = new System.Drawing.Size(180, 22);
             this.contextMenu_Strikeout.Text = "Strikeout";
             this.contextMenu_Strikeout.Click += new System.EventHandler(this.menu_Format_Strikeout_Click);
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.undoToolStripMenuItem.Text = "Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Z)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.redoToolStripMenuItem.Text = "Redo";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
             // 
             // MainForm
             // 
@@ -556,5 +582,8 @@
         private System.Windows.Forms.ToolStripMenuItem contextMenu_Underlined;
         private System.Windows.Forms.ToolStripMenuItem contextMenu_Strikeout;
         private System.Windows.Forms.ToolStripMenuItem menu_File_SaveAll;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
     }
 }

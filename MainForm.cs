@@ -30,7 +30,7 @@ namespace PeerTextEditor
             menuStrip.BackColor = formColor;
             this.hideOnlyForm = hideOnlyForm;
             formsOpenedCount += 1;
-            autoSaveIntervalSeconds = 120;
+            autoSaveIntervalSeconds = 10;
             timerAutoSave.Start();
             menu_Compile_Run.Text = "Run (/w "+ compilerFile?.Name + ")";
             if (createNewFile)
