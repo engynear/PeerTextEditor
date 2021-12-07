@@ -258,56 +258,63 @@ namespace PeerTextEditor
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var tbps = tabControl.TabPages;
+            try
+            {
+                var tbps = tabControl.TabPages;
 
-            if (File.Exists("settings.config"))
-            {
-                File.Delete("settings.config");
-            }
-            using StreamWriter sw = new("settings.config");
-            foreach (TabPage tab in tbps)
-            {
-                if ((tab as FileTabPage).IsSaved)
+                if (File.Exists("settings.config"))
                 {
-                    sw.WriteLine("fileInfo " + (tab as FileTabPage).FileInfo.FullName);
-                    continue;
+                    File.Delete("settings.config");
                 }
-                    
-                tabControl.SelectedTab = tab;
-                switch (askForSave(tab as FileTabPage))
+                using StreamWriter sw = new("settings.config");
+                foreach (TabPage tab in tbps)
                 {
-                    case DialogResult.Yes:
-                        if (!(tab as FileTabPage).SaveFile())
-                        {
+                    if ((tab as FileTabPage).IsSaved)
+                    {
+                        sw.WriteLine("fileInfo " + (tab as FileTabPage).FileInfo.FullName);
+                        continue;
+                    }
+
+                    tabControl.SelectedTab = tab;
+                    switch (askForSave(tab as FileTabPage))
+                    {
+                        case DialogResult.Yes:
+                            if (!(tab as FileTabPage).SaveFile())
+                            {
+                                e.Cancel = true;
+                                return;
+                            }
+                            else
+                            {
+                                sw.WriteLine("fileInfo " + (tab as FileTabPage).FileInfo.FullName);
+                            }
+                            break;
+                        case DialogResult.No:
+                            tabControl.TabPages.Remove(tab);
+                            break;
+                        case DialogResult.Cancel:
                             e.Cancel = true;
                             return;
-                        }
-                        else
-                        {
-                            sw.WriteLine("fileInfo " + (tab as FileTabPage).FileInfo.FullName);
-                        }
-                        break;
-                    case DialogResult.No:
-                        tabControl.TabPages.Remove(tab);
-                        break;
-                    case DialogResult.Cancel:
-                        e.Cancel = true;
-                        return;
+                    }
                 }
-            }
-            sw.WriteLine("backColor "+formColor.Name);
-            sw.WriteLine("foreColor "+formForeColor.Name);
-            sw.Close();
-            formsOpenedCount -= 1;
+                sw.WriteLine("backColor " + formColor.Name);
+                sw.WriteLine("foreColor " + formForeColor.Name);
+                sw.Close();
+                formsOpenedCount -= 1;
 
-            if (formsOpenedCount <= 0)
-                System.Environment.Exit(0);
+                if (formsOpenedCount <= 0)
+                    System.Environment.Exit(0);
 
-            if (hideOnlyForm)
+                if (hideOnlyForm)
+                {
+                    this.Hide();
+                    e.Cancel = true;
+                }
+            }catch(Exception)
             {
-                this.Hide();
-                e.Cancel = true;
+
             }
+            
         }
 
         private void runToolStripMenuItem_Click(object sender, EventArgs e)

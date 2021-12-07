@@ -1,6 +1,5 @@
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.csproj.AssemblyReference.cache
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.MainForm.resources
-C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.MainForm.en.resources
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.csproj.GenerateResource.cache
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.AssemblyInfoInputs.cache
@@ -13,8 +12,6 @@ C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\PeerTextEdit
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\ref\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\PeerTextEditor.pdb
-C:\Users\engyn\source\repos\PeerTextEditor\bin\Debug\net5.0-windows\en\PeerTextEditor.resources.dll
-C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\en\PeerTextEditor.resources.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\ref\PeerTextEditor.dll
 C:\Users\engyn\source\repos\PeerTextEditor\obj\Debug\net5.0-windows\PeerTextEditor.pdb
